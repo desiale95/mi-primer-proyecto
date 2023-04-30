@@ -60,7 +60,7 @@ body {
     
 }
 
-.first{
+main .first, main .second{
     width: 400px;
     margin: auto;
 }
@@ -109,10 +109,6 @@ body {
     background-color: rgba(141, 16, 41, 0.936);
 }
 
-.second{
-    width: 400px;
-    margin: auto;
-}
 
 .second article {
     transition: box-shadow 0.3s ease ;
@@ -164,7 +160,7 @@ footer{
         padding: 2px;
     }
 
-    .first{
+    main .first, main .second{
         width: 300px;
     }
 
@@ -173,9 +169,7 @@ footer{
         height: 200px;
     }
 
-    .second{
-        width: 300px;
-    }
+    
     .second img{
         width: 70px;
         margin: 2px;
