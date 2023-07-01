@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -20,19 +21,23 @@
         
         <nav>
             <ul class="nav-links">
-                <li> <a href="#start"> Inicio </a></li>
-                <li> <a href="#contact"> Contacto </a></li>
+                <li class="nav-item"> <a href="#start" class="active"> Inicio </a></li>
+                <li class="nav-item"> <a href="#contact"> Contacto </a></li>
 
             </ul>
+            <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+            <input type="checkbox" id="toggle">
         </nav>
     </header>
     
     <hr>
     <main>
-        <section class="first">
-            <article id="start">
-    
-                <img src="img/mujer.png" alt="Imagen de Desiree Carrero">
+
+        <section class="first" id="start">
+
+            <img  class="imagen" src="img/imagen1.jpg" id="imgchange" alt="Imagen de Desiree Carrero" onclick="cambioImagen()">
+
+            <article>
     
                 <h2>Hola! Soy Desiree Carrero</h2>
     
@@ -46,7 +51,7 @@
                 <br>
     
                 <div id="contenedor-button">
-                    <a download="Desiree Carrero - CV" href="doc/CV-DesireeAlejandraCarreroCarrero.pdf" class="btn btn-1"> Descargar mi CV</a>
+                    <a download="Desiree Carrero - CV" href="doc/cv-desireecarrero.pdf.pdf" class="btn btn-1"> Descargar mi CV</a>
                 </div>
     
                 <br>
@@ -54,6 +59,7 @@
             </article>
     
         </section>
+        
     
         <section class="second">
             <article id="contact">
@@ -66,14 +72,23 @@
                 </p>
     
             </article>
+
     
             <div>
                 <h3> No lo dejes pasar! </h3>
             </div>
-            <a href="mailto:paginasweb@gmail.com"><img src="img/mail.png" alt="Imagen de mail" width="100"></a>
+            <a href="mailto:desiale95@gmail.com"><img src="img/mail.png" alt="Imagen de mail" width="100"></a>
             <a href="https://github.com/desiale95" target="_blank"><img src="img/github.png" alt="Imagen de mail" width="100"></a>
             <a href="https://www.linkedin.com/in/desiree-carrero-90bab815b/" target="_blank"><img src="img/linkedin.png" alt="Imagen de mail" width="100"></a>
+            <br>
+            <br>
+            <div class="reloj">
+                <p class="fecha"></p>
+                <p class="tiempo"></p>
+                <p class="hora-arg"><i class="fa-regular fa-clock"></i>Argentina</p>
+            </div>
         </section>
+
     </main>
     
     <br>
@@ -81,6 +96,6 @@
     <footer>
         <p>Copyright 2023</p>
     </footer>
-    
+    <script src="/js/main.js"></script>
 </body>
 </html>
